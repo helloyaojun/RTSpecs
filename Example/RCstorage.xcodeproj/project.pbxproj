@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0C297FCF151CFCD4ADA1062E /* Pods-RCstorage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCstorage_Tests.release.xcconfig"; path = "Target Support Files/Pods-RCstorage_Tests/Pods-RCstorage_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		13BFEE98F778DA1A0E5370F5 /* RCstorage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RCstorage.podspec; path = ../RCstorage.podspec; sourceTree = "<group>"; };
+		13BFEE98F778DA1A0E5370F5 /* RCstorage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RCstorage.podspec; path = ../RCstorage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1E543EC8EC9570F13CB91892 /* Pods-RCstorage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCstorage_Example.debug.xcconfig"; path = "Target Support Files/Pods-RCstorage_Example/Pods-RCstorage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RCstorage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCstorage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60D1E5FF1C2FDEF19DAF32E3 /* Pods_RCstorage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCstorage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6384A497C640ECFC2E5A5C66 /* Pods_RCstorage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCstorage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E7C6640FA06E007A704A321 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A626C56657CCADBC3F5F8811 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8E7C6640FA06E007A704A321 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A626C56657CCADBC3F5F8811 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AE5D76E48F0FE2B8156B9799 /* Pods-RCstorage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCstorage_Example.release.xcconfig"; path = "Target Support Files/Pods-RCstorage_Example/Pods-RCstorage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EA73982D0BECF8EFCF5A4502 /* Pods-RCstorage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCstorage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RCstorage_Tests/Pods-RCstorage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +147,6 @@
 				EA73982D0BECF8EFCF5A4502 /* Pods-RCstorage_Tests.debug.xcconfig */,
 				0C297FCF151CFCD4ADA1062E /* Pods-RCstorage_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				002F9A4FE691E63EF933C1CB /* [CP] Embed Pods Frameworks */,
+				15C7A7AD677F8CC3E374E4B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -263,22 +263,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		002F9A4FE691E63EF933C1CB /* [CP] Embed Pods Frameworks */ = {
+		15C7A7AD677F8CC3E374E4B9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RCstorage_Example/Pods-RCstorage_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RCstorage/RCstorage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RCstorage_Example/Pods-RCstorage_Example-resources.sh",
+				"${PODS_ROOT}/AGConnectCredential/AGCResources.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCstorage.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AGCResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RCstorage_Example/Pods-RCstorage_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RCstorage_Example/Pods-RCstorage_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		853F4F6C404859B9A4F25456 /* [CP] Embed Pods Frameworks */ = {
@@ -445,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -491,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -505,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCstorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -520,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RCstorage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

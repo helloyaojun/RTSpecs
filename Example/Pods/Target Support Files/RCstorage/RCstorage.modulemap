@@ -1,0 +1,6 @@
+framework module RCstorage {
+  umbrella header "RCstorage-umbrella.h"
+
+  export *
+  module * { export * }
+}

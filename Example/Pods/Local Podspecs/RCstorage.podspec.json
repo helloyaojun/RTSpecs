@@ -1,0 +1,28 @@
+{
+  "name": "RCstorage",
+  "version": "0.1.0",
+  "summary": "A short description of RCstorage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iss730001004790/RCstorage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iss730001004790": "junyaoj@isoftstone.com"
+  },
+  "source": {
+    "git": "https://github.com/iss730001004790/RCstorage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "RCstorage/Classes/**/*",
+  "dependencies": {
+    "AGConnectStorage": [
+
+    ]
+  },
+  "static_framework": true
+}
