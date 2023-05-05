@@ -9,4 +9,7 @@ import UIKit
 
 class RCstorageManager: NSObject {
 
+    func test() {
+        
+    }
 }
