@@ -11,5 +11,6 @@ class RCstorageManager: NSObject {
 
     func test() {
 
+        print("123")
     }
 }
